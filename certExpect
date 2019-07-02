@@ -1,0 +1,10 @@
+#!/usr/bin/expect -f
+
+set timeout -1
+spawn ./certCall
+match_max 100000
+expect -exact "" {   
+sleep 9
+send -- "\r"
+}
+expect eof

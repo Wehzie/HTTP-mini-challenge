@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sleep 6
+pm2 start src/cert.js
+sleep 10
+pm2 stop cert
