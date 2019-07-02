@@ -1,0 +1,7 @@
+#!/bin/bash
+
+./certExpect & ./startPython & ./startServer
+sleep 20
+rm ./src/cert.js
+mv ./src/cert.js.bak ./src/cert.js
+rm keyFile.txt pasteCertificate.txt

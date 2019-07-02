@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#For testing add flag, for production remove: --test-cert
+certbot --test-cert certonly --manual --preferred-challenges=http --manual-public-ip-logging-ok -d example.com > keyFile.txt

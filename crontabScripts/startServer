@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /home/user/mainServer
+pm2 start src/back/index.js
